@@ -42,7 +42,7 @@ A classe `Cliente` representa um cliente do banco, que pode possuir várias cont
 
 - **Getters e Setters**: Para `cpf`, `nome`, e `contas`, todos devem estar privados. O *getter* de `contas` deve retornar uma cópia do `ArrayList` para proteger o encapsulamento.
 - `adicionarConta(Conta conta)`: Adiciona uma conta ao `ArrayList` se ela não existir (verifique pela existência do objeto). Não permita adicionar `null`.
-- `removerConta(Conta conta)`: Remove a conta, se ela existir.
+- `removerConta(String numero)`: Remove a conta, se ela existir.
 - `localizarContaPorNumero(String numeroConta)`: Retorna a conta com o número especificado e demais atributos ou `null` se não encontrada.
 - `atualizarConta(Conta novaConta)`: Atualiza a conta existente com o mesmo número da `novaConta`, substituindo-a no `ArrayList`.
 - `toString()`: Retorna uma representação em texto do cliente (ex.: `Cliente [cpf=12345678901, nome=João, contas=2]`).
@@ -129,9 +129,10 @@ A classe `PersistenciaEmArquivo` gerencia a persistência de clientes em um arqu
 
 1. **Estrutura do Projeto**:
 
-   - Crie um projeto Java no Eclipse chamado `sistema-bancario`.
-   - Crie o pacote `banco` e implemente as classes `Cliente.java`, `Conta.java`, e `PersistenciaEmArquivo.java` dentro dele.
-   - O pacote `banco.test` já contém os testes JUnit (`ClienteTest.java`, `ContaTest.java`, `PersistenciaEmArquivoTest.java`, e `SistemaBancarioTestSuite.java`), que você deve usar para validar sua implementação.
+   - Importe o projeto Java no Eclipse chamado `milestone_avaliacao_1_und1`.
+   - Crie o pacote `sistema.bancario.prova.model` e implemente as classes `Cliente.java` e `Conta.java`.
+   - Crie o pacote `sistema.bancario.prova.persistencia` e implemente a classe `PersistenciaEmArquivo.java` dentro dele.
+   - O pacote `sistema.bancario.prova.test` já contém os testes JUnit (`ClienteTest.java`, `ContaTest.java`, `PersistenciaEmArquivoTest.java`, e `SistemaBancarioTestSuite.java`), que você deve usar para validar sua implementação.
 
 2. **Configuração do Ambiente**:
 
