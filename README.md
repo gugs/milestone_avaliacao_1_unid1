@@ -134,7 +134,7 @@ A classe `PersistenciaEmArquivo` gerencia a persistência de clientes em um arqu
    - Crie o pacote `sistema.bancario.prova.persistencia` e implemente a classe `PersistenciaEmArquivo.java` dentro dele.
    - O pacote `sistema.bancario.prova.test` já contém os testes JUnit (`ClienteTest.java`, `ContaTest.java`, `PersistenciaEmArquivoTest.java`, e `SistemaBancarioTestSuite.java`), que você deve usar para validar sua implementação.
 
-2. **Configuração do Ambiente**:
+2. **Configuração do Ambiente (Caso realizado, passe para a próxima etapa)**:
 
    - Use Java 8 ou superior.
    - Adicione a biblioteca JUnit 5 ao projeto:
@@ -155,6 +155,7 @@ A classe `PersistenciaEmArquivo` gerencia a persistência de clientes em um arqu
    - Implemente os métodos `equals` e `hashCode` de forma consistente, usando `Objects.equals` e `Objects.hash` para simplificar.
    - Use `BigDecimal` para cálculos financeiros, evitando tipos como `double` devido a imprecisões.
    - Teste incrementalmente, implementando e validando uma classe de cada vez com os testes correspondentes.
+   - Alguns testes têm dependência de outros para funcionar adequadamente.
    - Certifique-se de que o `ArrayList` de contas em `Cliente` e de clientes em `PersistenciaEmArquivo` seja protegido contra modificações externas.
 
 ## Critérios de Avaliação
